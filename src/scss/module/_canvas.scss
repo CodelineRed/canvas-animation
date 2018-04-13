@@ -1,0 +1,73 @@
+body {
+    background-color: grey;
+}
+
+#canvas {
+    max-width: 1000px;
+    margin: auto;
+    background-color: black;
+
+    .square {
+        position: absolute;
+        width: 5%;
+        height: 8.8%;
+        
+        &.red {
+            background-color: red;
+            top: 0;
+            left: 47.5%;
+        }
+        
+        &.green {
+            background-color: green;
+            top: 91.2%;
+            right: 0;
+            
+            &:after {
+                content: '';
+                position: absolute;
+                right: 90%;
+                width: 0%;
+                height: 100%;
+                background-color: red;
+            }
+            
+            &:before {
+                content: '';
+                position: absolute;
+                bottom: 90%;
+                width: 100%;
+                height: 0%;
+                background-color: red;
+            }
+        }
+        
+        &.blue {
+            background-color: blue;
+            top: 91.2%;
+            left: 0;
+        }
+    }
+    
+    .label {
+        font-family: Arial, sans-serif;
+        color: lime;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 25px;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        letter-spacing: 3px;
+        transform: translateX(-50%);
+        opacity: 0;
+        -webkit-animation: hue 6s infinite linear;
+    }
+}
+
+:fullscreen #canvas, 
+:-ms-fullscreen #canvas,
+:-moz-full-screen #canvas, 
+:-webkit-fullscreen #canvas {
+    max-width: none;
+}
