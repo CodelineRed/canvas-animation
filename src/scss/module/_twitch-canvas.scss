@@ -1,0 +1,124 @@
+#twitch {
+    background-color: #201C2B;
+    
+    .logo { // 1:1
+        position: absolute;
+        top: 36.7%;
+        left: -23%;
+        width: 15.6%;
+        height: 27.6%;
+        overflow: hidden;
+        transform: rotate(45deg);
+            
+        .background-top {
+            position: absolute;
+            top: 0;
+            left: 3%;
+            height: 17.9%;
+            width: 100%;
+            background-color: #6441a5;
+            transform: skew(-18deg);
+        }
+        
+        .background-center {
+            position: absolute;
+            top: 17.7%;
+            left: 0;
+            width: 100%;
+            height: 42.3%;
+            background-color: #6441a5;
+        }
+            
+        .background-bottom {
+            position: absolute;
+            top: 57%;
+            left: -18.5%;
+            height: 33%;
+            width: 105%;
+            background-color: #6441a5;
+            transform: skew(-45deg);
+        }
+        
+        .background-tip {
+            position: absolute;
+            top: 86.5%;
+            left: 25.2%;
+            height: 13%;
+            width: 28.2%;
+            overflow: hidden;
+            
+            .bg-tip {
+                position: absolute;
+                top: 0;
+                left: -15%;
+                width: 100%;
+                height: 100%;
+                background-color: #6441a5;
+                transform: skew(-45deg);
+            }
+        }
+        
+        .foreground-top {
+            position: absolute;
+            top: 8.9%;
+            left: 15.3%;
+            height: 48.8%;
+            width: 75.5%;
+            background-color: white;
+        }
+        
+        .foreground-bottom {
+            position: absolute;
+            top: 54.5%;
+            left: 15.3%;
+            height: 18.5%;
+            width: 75.5%;
+            overflow: hidden;
+        
+            .fg-bottom {
+                position: absolute;
+                top: 0;
+                left: -13%;
+                width: 105%;
+                height: 100%;
+                background-color: white;
+                transform: skew(-45deg);
+            }
+        }
+        
+        .foreground-tip {
+            position: absolute;
+            top: 70%;
+            left: 37.4%;
+            height: 14.8%;
+            width: 11.8%;
+            overflow-x: hidden;
+        
+            .fg-tip {
+                position: absolute;
+                top: 0;
+                left: -37%;
+                width: 100%;
+                height: 100%;
+                background-color: white;
+                transform: skew(-45deg);
+            }
+        }
+        
+        .eye {
+            position: absolute;
+            width: 9.4%;
+            height: 26.5%;
+            top: 27.6%;
+            background-color: #6441a5;
+            
+            &.left {
+                left: 38.8%;
+            }
+            
+            &.right {
+                left: 62.9%;
+            }
+        }
+    }
+}

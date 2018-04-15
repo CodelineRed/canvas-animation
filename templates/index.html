@@ -4,19 +4,65 @@
         <title>Canvas Animation</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#212121">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
         <link href="css/styles.css" rel="stylesheet"/>
     </head>
     <body>
-        <div id="canvas" class="canvas-ratio-16by9">
-            <div class="square red"></div>
-            <div class="square green"></div>
-            <div class="square blue"></div>
-            <div class="label">spread love</div>
-        </div>
-        <div class="controls">
-            <div class="play"></div>
-            <div class="reset"></div>
-            <div class="fullscreen"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 py-3">
+                    <h1 class="text-center pb-3">
+                        InsanityMeetsHH - Canvas Animation
+                        <a href="https://github.com/InsanityMeetsHH/jquery-canvas-animation"><i class="fab fa-github"></i></a>
+                    </h1>
+                    
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#love-tab" role="tab" aria-controls="love-tab" aria-selected="true">Spread Love</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#twitch-tab" role="tab" aria-controls="twitch-tab" aria-selected="false">Twitch</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12 pb-3">
+                    <div class="tab-content pt-3">
+                        <div class="tab-pane fade show active" id="love-tab" role="tabpanel" aria-labelledby="love-tab">
+                            <div id="love" class="canvas-ratio-16by9">
+                                <div class="square red"></div>
+                                <div class="square green"></div>
+                                <div class="square blue"></div>
+                                <div class="label">spread love</div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="twitch-tab" role="tabpanel" aria-labelledby="twitch-tab">
+                            <div id="twitch" class="canvas-ratio-16by9">
+                                <div class="logo">
+                                    <div class="background-top"></div>
+                                    <div class="background-center"></div>
+                                    <div class="background-bottom"></div>
+                                    <div class="background-tip">
+                                        <div class="bg-tip"></div>
+                                    </div>
+                                    <div class="foreground-top"></div>
+                                    <div class="foreground-bottom">
+                                        <div class="fg-bottom"></div>
+                                    </div>
+                                    <div class="foreground-tip">
+                                        <div class="fg-tip"></div>
+                                    </div>
+                                    <div class="eye left"></div>
+                                    <div class="eye right"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         
         <script src="js/scripts.js"></script>

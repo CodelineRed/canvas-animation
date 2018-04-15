@@ -1,0 +1,44 @@
+.transition-all {
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+body {
+    background-color: grey;
+}
+
+h1, h2, h3, h4 {
+    color: white;
+}
+
+a {
+    color: white;
+    @extend .transition-all;
+    
+    &:hover {
+        color: black;
+    }
+}
+
+.nav-tabs {
+    .nav-item {
+        &.show {
+            .nav-link {
+                color: white;
+                background-color: #565656;
+            }
+        }
+    }
+    
+    .nav-link {
+        color: white;
+        @extend .transition-all;
+        
+        &.active {
+            color: white;
+            background-color: #565656;
+        }
+    }
+}

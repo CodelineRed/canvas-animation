@@ -38,26 +38,11 @@ gulp.task('js', function() {
         .pipe(gulp.dest(publicPath + 'js/'));
 });
 
-// minify images
-gulp.task('img', function() {
-    gulp.src(sourcePath + '{img,icon}/**/*.{png,gif,jpg,jpeg,ico,xml}')
-        .pipe(imagemin())
-        .pipe(gulp.dest(systemPath))
-        .pipe(gulp.dest(publicPath));
-});
-
 // copy all fonts
 gulp.task('font', function() {
     gulp.src(sourcePath + 'font/**')
 //        .pipe(gulp.dest(systemPath + 'font/'))
         .pipe(gulp.dest(publicPath + 'font/'));
-});
-
-// copy all svg images
-gulp.task('svg', function() {
-    gulp.src(sourcePath + 'svg/**')
-//        .pipe(gulp.dest(systemPath + 'svg/'))
-        .pipe(gulp.dest(publicPath + 'svg/'));
 });
 
 // add the watcher
@@ -66,19 +51,15 @@ gulp.task('watch', function() {
     gulp.watch(sourcePath + 'scss/**', ['scss']);
     // watch js files
     gulp.watch(sourcePath + 'js/**', ['js']);
-    // watch images
-    gulp.watch(sourcePath + '{img,icon}/**', ['img']);
     // watch fonts
     gulp.watch(sourcePath + 'font/**', ['font']);
-    // watch svg
-    gulp.watch(sourcePath + 'svg/**', ['svg']);
 });
 
 // production
-gulp.task('prod', ['scss', 'js', 'img', 'font', 'svg']);
+gulp.task('prod', ['scss', 'js', 'font']);
 
 // default task if just called gulp (incl. Watch)
-gulp.task('default', ['scss', 'js', 'img', 'font', 'svg', 'watch'], function() {
+gulp.task('default', ['scss', 'js', 'font', 'watch'], function() {
     // start browsersync
     browserSync.init({
         proxy: localServer

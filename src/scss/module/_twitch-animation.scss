@@ -1,0 +1,129 @@
+#twitch {
+    &.ca-1 {
+        .logo {
+            left: -5%;
+        }
+    }
+    
+    &.ca-2 {
+        .logo {
+            left: -23%;
+        }
+    }
+    
+    &.ca-3 {
+        .logo {
+            left: auto;
+            right: -23%;
+            transform: rotate(-45deg) scale(-1, 1);
+        }
+    }
+    
+    &.ca-4 {
+        .logo {
+            right: -5%;
+        }
+    }
+    
+    &.ca-5 {
+        .logo {
+            right: -23%;
+        }
+    }
+    
+    &.ca-6 {
+        .logo {
+            right: auto;
+            top: auto;
+            left: 42.2%;
+            transform: none;
+            bottom: -40%;
+        }
+    }
+    
+    &.ca-7 {
+        .logo {
+            bottom: -11%;
+        }
+    }
+    
+    &.ca-8 {
+        .logo {
+            bottom: -40%;
+        }
+    }
+    
+    &.ca-9 {
+        .logo {
+            bottom: auto;
+            top: -40%;
+            animation: rotate-cw 1s infinite linear;
+            transition-duration: 2.9s;
+            transition-timing-function: linear;
+        }
+    }
+    
+    &.ca-10 {
+        .logo {
+            bottom: auto;
+            top: 36.7%;
+        }
+    }
+    
+    &.ca-11 {
+        .logo {
+            width: 41.66%;
+            height: 74%;
+            top: 13%;
+            left: 29.2%;
+            animation: none;
+            transition-duration: .5s;
+            transition-timing-function: ease;
+        }
+    }
+    
+    &.ca-12 {
+        .logo {
+            .eye {
+                &.left {
+                    height: 3%;
+                    top: 41%;
+                    transition-duration: .3s;
+                }
+            }
+        }
+    }
+    
+    &.ca-13 {
+        .logo {
+            .eye {
+                &.left {
+                    top: 27.6%;
+                    height: 26.5%;
+                }
+            }
+        }
+    }
+    
+    &.ca-14 {
+        .logo {
+            .eye {
+                &.left {
+                    height: 3%;
+                    top: 41%;
+                }
+            }
+        }
+    }
+    
+    &.ca-15 {
+        .logo {
+            .eye {
+                &.left {
+                    top: 27.6%;
+                    height: 26.5%;
+                }
+            }
+        }
+    }
+}

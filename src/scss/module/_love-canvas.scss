@@ -1,10 +1,4 @@
-body {
-    background-color: grey;
-}
-
-#canvas {
-    max-width: 1000px;
-    margin: auto;
+#love {
     background-color: black;
 
     .square {
@@ -63,11 +57,4 @@ body {
         opacity: 0;
         -webkit-animation: hue 6s infinite linear;
     }
-}
-
-:fullscreen #canvas, 
-:-ms-fullscreen #canvas,
-:-moz-full-screen #canvas, 
-:-webkit-fullscreen #canvas {
-    max-width: none;
 }

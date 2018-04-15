@@ -1,4 +1,14 @@
+@import "lib/bootstrap/bootstrap";
+@import "lib/fontawesome/fontawesome";
+@import "lib/fontawesome/fa-brands";
+@import "lib/fontawesome/fa-regular";
+@import "lib/fontawesome/fa-solid";
+
 @import "plugin/canvas-animation/jquery.canvas-animation";
 
-@import "module/canvas";
-@import "module/animation";
+@import "module/page";
+@import "module/keyframes";
+@import "module/love-canvas";
+@import "module/love-animation";
+@import "module/twitch-canvas";
+@import "module/twitch-animation";

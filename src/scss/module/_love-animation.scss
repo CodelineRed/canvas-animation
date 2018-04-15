@@ -1,4 +1,4 @@
-#canvas {
+#love {
     &.ca-1 {
         .square {
             &.red {
@@ -85,14 +85,4 @@
             opacity: 1;
         }
     }
-}
-
-@-webkit-keyframes hue {
-  from {
-    -webkit-filter: hue-rotate(0deg);
-  }
-
-  to {
-    -webkit-filter: hue-rotate(-360deg);
-  }
 }
