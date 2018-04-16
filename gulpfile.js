@@ -28,6 +28,7 @@ gulp.task('js', function() {
     gulp.src([
             sourcePath + 'js/lib/**/*.js',
             sourcePath + 'js/plugin/**/*.js',
+            'git_modules/imhh-jca/src/js/jquery.canvas-animation.js',
             sourcePath + 'js/module/**/*.js',
             sourcePath + 'js/scripts.js'
         ])
