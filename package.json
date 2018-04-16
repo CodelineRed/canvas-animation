@@ -1,18 +1,32 @@
 {
-  "name": "canvas-animation",
-  "version": "1.0.0",
-  "description": "This is a demo page for jquery-canvas-animation",
-  "author": "InsanityMeetsHH",
-  "license": "ISC",
-  "devDependencies": {
-    "browser-sync": "^2.13.0",
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^3.9.0",
-    "gulp-concat": "^2.6.0",
-    "gulp-imagemin": "^3.0.1",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "1.6.0",
-    "gulp-uglify": "^1.5.4",
-    "stream-series": "*"
-  }
+    "name": "canvas-animation",
+    "version": "0.2.2",
+    "description": "This is a demo page for jQuery Plugin - Canvas Animation",
+    "keywords": [
+        "jquery",
+        "animation"
+    ],
+    "author": {
+        "name": "InsanityMeetsHH",
+        "email": "software@insanitymeetshh.net"
+    },
+    "bugs": {
+        "url": "https://github.com/InsanityMeetsHH/canvas-animation/issues"
+    },
+    "license": "ISC",
+    "homepage": "http://ca.insanitymeetshh.net",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/InsanityMeetsHH/canvas-animation.git"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.13.0",
+        "gulp": "^3.9.1",
+        "gulp-clean-css": "^3.9.0",
+        "gulp-concat": "^2.6.0",
+        "gulp-imagemin": "^3.0.1",
+        "gulp-sass": "^3.1.0",
+        "gulp-sourcemaps": "1.6.0",
+        "gulp-uglify": "^1.5.4"
+    }
 }

@@ -6,12 +6,11 @@ var concat      = require('gulp-concat');
 var uglify      = require('gulp-uglify');
 var imagemin    = require('gulp-imagemin');
 var browserSync = require('browser-sync').create();
-var series      = require('stream-series');
 
-var sourcePath = "src/";
-var publicPath = "public/";
-var systemPath = '../path/to/system/';
-var localServer = 'http://localhost/imhh-canvas-animation/public/';
+var sourcePath  = "src/";
+var publicPath  = "public/";
+var systemPath  = '../path/to/system/';
+var localServer = 'http://localhost/imhh-ca/public/';
 
 // processing scss to css and minify result
 gulp.task('scss', function() {
@@ -26,10 +25,12 @@ gulp.task('scss', function() {
 
 // concatinate and uglify all js
 gulp.task('js', function() {
-    return series(gulp.src(sourcePath + 'js/lib/**/*.js'),
-                  gulp.src(sourcePath + 'js/plugin/**/*.js'),
-                  gulp.src(sourcePath + 'js/module/**/*.js'),
-                  gulp.src(sourcePath + 'js/scripts.js'))
+    gulp.src([
+            sourcePath + 'js/lib/**/*.js',
+            sourcePath + 'js/plugin/**/*.js',
+            sourcePath + 'js/module/**/*.js',
+            sourcePath + 'js/scripts.js'
+        ])
         .pipe(sourcemaps.init())
         .pipe(concat('scripts.js'))
         .pipe(uglify())
