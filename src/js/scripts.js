@@ -1,8 +1,17 @@
 // jQuery.noConflict();
 (function($) {
     $(document).ready(function() {
+        hljs.initHighlightingOnLoad();
         $('#love').canvasAnimation(loveConfig);
         $('#twitch').canvasAnimation(twitchConfig);
+        
+//        $('code').each(function() {
+//            var line = 1;
+//            code = $(this).html();
+//            $(this).html(code.replace(/^/gm, function() {
+//                return '<span class="line-number">' + line++ + '</span>';
+//            }));
+//        });
     });
 })(jQuery);
 
