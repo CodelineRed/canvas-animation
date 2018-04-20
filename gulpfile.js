@@ -26,9 +26,11 @@ gulp.task('scss', function() {
 // concatinate and uglify all js
 gulp.task('js', function() {
     gulp.src([
+            'node_modules/jquery/dist/jquery.js',
+            'node_modules/bootstrap/dist/js/bootstrap.bundle.js',
             sourcePath + 'js/lib/**/*.js',
+            'node_modules/jquery-canvas-animation/src/js/jquery.canvas-animation.js',
             sourcePath + 'js/plugin/**/*.js',
-            'git_modules/imhh-jca/src/js/jquery.canvas-animation.js',
             sourcePath + 'js/module/**/*.js',
             sourcePath + 'js/scripts.js'
         ])
@@ -42,7 +44,10 @@ gulp.task('js', function() {
 
 // copy all fonts
 gulp.task('font', function() {
-    gulp.src(sourcePath + 'font/**')
+    gulp.src([
+            'node_modules/@fortawesome/fontawesome-free/webfonts/**',
+            sourcePath + 'font/**'
+        ])
 //        .pipe(gulp.dest(systemPath + 'font/'))
         .pipe(gulp.dest(publicPath + 'font/'));
 });

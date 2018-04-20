@@ -22,8 +22,37 @@ a {
     }
 }
 
-.controls {
-    height: 55px;
+.code-wrap {
+    position: relative;
+    
+    .code-lines {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #c5c8c6;
+        background-color: #1d1f21;
+        font-family: monospace,monospace;
+        font-size: 1em;
+        padding-top: 8px;
+        text-align: right;
+        width: 45px;
+        padding-right: 10px;
+    }
+    
+    code {
+        padding-left: 45px;
+    }
+    
+    .fa-code {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        background-color: darkslategray;
+        color: #c5c8c6;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 }
 
 .nav-tabs {

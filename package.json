@@ -1,6 +1,6 @@
 {
     "name": "canvas-animation",
-    "version": "0.3.1",
+    "version": "0.4.0",
     "description": "This is a demo page for jQuery Plugin - Canvas Animation",
     "keywords": [
         "jquery",
@@ -28,5 +28,11 @@
         "gulp-sass": "^3.1.0",
         "gulp-sourcemaps": "1.6.0",
         "gulp-uglify": "^1.5.4"
+    },
+    "dependencies": {
+        "jquery-canvas-animation": "^0.3.2",
+        "@fortawesome/fontawesome-free": "^5.1.0-4",
+        "bootstrap": "^4.1.0",
+        "jquery": "^3.3.1"
     }
 }

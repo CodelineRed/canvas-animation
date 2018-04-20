@@ -1,0 +1,33 @@
+<div class="code-wrap">
+    <i class="fa fa-code copy-code transition" aria-hidden="true" data-toggle="tooltip" data-placement="left" data-id="ls-code" title="Select code"></i>
+    <div class="code-lines"></div>
+    <pre><code id="ls-code" class="javascript">// jQuery.noConflict();
+(function($) {
+    $(document).ready(function() {
+        $('#love').canvasAnimation(loveConfig);
+    });
+})(jQuery);
+
+var loveConfig = {
+    autoplay : true,
+    infinity: false,
+    steps : [
+        {
+            addClass : 'ca-1',
+            duration : 800
+        },
+        {
+            addClass : 'ca-2',
+            duration : 800
+        },
+        {
+            addClass : 'ca-3',
+            duration : 800
+        },
+        {
+            addClass : 'ca-4',
+            duration : 500
+        }
+    ]
+};</code></pre>
+</div>

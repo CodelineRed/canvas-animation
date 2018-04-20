@@ -1,0 +1,64 @@
+<div class="code-wrap">
+    <i class="fa fa-code copy-code transition" aria-hidden="true" data-toggle="tooltip" data-placement="left" data-id="lc-code" title="Select code"></i>
+    <div class="code-lines"></div>
+    <pre><code id="lc-code" class="css">#love {
+    background-color: black;
+}
+
+#love .square {
+    position: absolute;
+    width: 5%;
+    height: 8.8%;
+}
+
+#love .square.red {
+    background-color: red;
+    top: 0;
+    left: 47.5%;
+}
+
+#love .square.green {
+    background-color: green;
+    top: 91.2%;
+    right: 0;
+}
+
+#love .square.green:after {
+    content: '';
+    position: absolute;
+    right: 90%;
+    width: 0%;
+    height: 100%;
+    background-color: red;
+}
+
+#love .square.green:before {
+    content: '';
+    position: absolute;
+    bottom: 90%;
+    width: 100%;
+    height: 0%;
+    background-color: red;
+}
+
+#love .square.blue {
+    background-color: blue;
+    top: 91.2%;
+    left: 0;
+}
+
+#love .label {
+    font-family: Arial, sans-serif;
+    color: lime;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    letter-spacing: 3px;
+    transform: translateX(-50%);
+    opacity: 0;
+    -webkit-animation: hue 6s infinite linear;
+}</code></pre>
+</div>
