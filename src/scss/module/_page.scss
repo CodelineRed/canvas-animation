@@ -24,6 +24,10 @@ a {
 
 .controls {
     height: 55px;
+    
+    .pause:before {
+        width: 10px;
+    }
 }
 
 .code-wrap {

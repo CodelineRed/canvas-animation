@@ -16,18 +16,24 @@
     controls: true, // if true: adds controls to canvas
     controls_fa: null, // fontawesome version (4 or 5)
     controls_wrapper: '.controls', // class of the controls wrapper
+    step_backward_button: '.step-backward', // class of step backward button
     play_button: '.play', // class of play button
     pause_button: '.pause', // class of pause button
     reset_button: '.reset', // class of reset button
+    step_forward_button: '.step-forward', // class of step forward button
     fullscreen_button: '.fullscreen', // class of fullscreen button
     class_done: 'done', // is set if the animation is done
     class_wait: 'wait', // is set if autoplay: false and animation is never played or user clicked on reset button
+    class_forward: 'forward', // is set if user clicked step-forward
+    class_backward: 'backward', // is set if user clicked step-backward
     class_wrap: 'canvas-animation',
     controls_template:
         '&lt;div class="controls"&gt;' +
+            '&lt;div class="step-backward #STEPBACKWARD#"&gt;&lt;/div&gt;' +
             '&lt;div class="play #PLAY#"&gt;&lt;/div&gt;' +
             '&lt;div class="pause #PAUSE#"&gt;&lt;/div&gt;' +
             '&lt;div class="reset #RESET#"&gt;&lt;/div&gt;' +
+            '&lt;div class="step-forward #STEPFORWARD#"&gt;&lt;/div&gt;' +
             '&lt;div class="fullscreen #FULLSCREEN#"&gt;&lt;/div&gt;' +
         '&lt;/div&gt;',
     callback_play: null, // called before first animation step
