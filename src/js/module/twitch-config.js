@@ -1,15 +1,14 @@
 var twitchConfig = {
     autoplay: false,
     infinity: true,
-    controls_fa: 5,
+    fontawesomeVersion: 5,
     steps: [
         {
             addClass: 'ca-1',
             duration: 1800
         },
         {
-            addClass: 'ca-2',
-            duration: 500
+            addClass: 'ca-2'
         },
         {
             addClass: 'ca-3',
@@ -20,8 +19,7 @@ var twitchConfig = {
             duration: 1800
         },
         {
-            addClass: 'ca-5',
-            duration: 500
+            addClass: 'ca-5'
         },
         {
             addClass: 'ca-6',
@@ -32,8 +30,7 @@ var twitchConfig = {
             duration: 1800
         },
         {
-            addClass: 'ca-8',
-            duration: 500
+            addClass: 'ca-8'
         },
         {
             addClass: 'ca-9',
@@ -44,8 +41,7 @@ var twitchConfig = {
             duration: 2900
         },
         {
-            addClass: 'ca-11',
-            duration: 500
+            addClass: 'ca-11'
         },
         {
             addClass: 'ca-12',

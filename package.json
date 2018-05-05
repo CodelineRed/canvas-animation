@@ -31,8 +31,8 @@
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.1.0-4",
-        "bootstrap": "^4.1.0",
+        "bootstrap": "^4.1.1",
         "jquery": "^3.3.1",
-        "jquery-canvas-animation": "*"
+        "jquery-canvas-animation": "^1.0.1"
     }
 }

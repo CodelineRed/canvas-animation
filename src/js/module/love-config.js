@@ -15,8 +15,7 @@ var loveConfig = {
             duration: 800
         },
         {
-            addClass: 'ca-4',
-            duration: 500
+            addClass: 'ca-4'
         }
     ]
 };
