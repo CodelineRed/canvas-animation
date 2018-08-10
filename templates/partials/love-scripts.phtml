@@ -1,5 +1,5 @@
 <div class="code-wrap">
-    <i class="fa fa-code copy-code transition" aria-hidden="true" data-toggle="tooltip" data-placement="left" data-id="ls-code" title="Select code"></i>
+    <div class="code-icon" data-toggle="tooltip" data-placement="left" data-id="ls-code" title="Select code"><i class="fas fa-code" aria-hidden="true"></i></div>
     <div class="code-lines"></div>
     <pre><code id="ls-code" class="javascript">// jQuery.noConflict();
 (function($) {
@@ -10,7 +10,11 @@
 
 var loveConfig = {
     autoplay: true,
-    infinity: false,
+    infinite: false,
+    useIcons: true,
+    editor: {
+        enable: false
+    },
     steps: [
         {
             addClass: 'ca-1',
