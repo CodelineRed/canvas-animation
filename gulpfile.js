@@ -9,7 +9,6 @@ var browserSync = require('browser-sync').create();
 
 var sourcePath  = "src/";
 var publicPath  = "public/";
-var systemPath  = '../path/to/system/';
 var localServer = 'http://localhost/imhh-ca/public/';
 
 // processing scss to css and minify result
@@ -27,9 +26,11 @@ gulp.task('scss', function() {
 gulp.task('js', function() {
     gulp.src([
             'node_modules/jquery/dist/jquery.js',
+            'node_modules/jquery-ui-dist/jquery-ui.js',
             'node_modules/bootstrap/dist/js/bootstrap.bundle.js',
+            'node_modules/@fortawesome/fontawesome-free/js/all.js',
             sourcePath + 'js/lib/**/*.js',
-            'node_modules/jquery-canvas-animation/src/js/jquery.canvas-animation.js',
+            'node_modules/jquery-canvas-animation/dist/js/jquery.canvas-animation.bundle.js',
             sourcePath + 'js/plugin/**/*.js',
             sourcePath + 'js/module/**/*.js',
             sourcePath + 'js/scripts.js'
@@ -38,17 +39,15 @@ gulp.task('js', function() {
         .pipe(concat('scripts.js'))
         .pipe(uglify())
         .pipe(sourcemaps.write('./'))
-//        .pipe(gulp.dest(systemPath + 'js/'))
         .pipe(gulp.dest(publicPath + 'js/'));
 });
 
 // copy all fonts
 gulp.task('font', function() {
     gulp.src([
-            'node_modules/@fortawesome/fontawesome-free/webfonts/**',
+//            'node_modules/@fortawesome/fontawesome-free/webfonts/**',
             sourcePath + 'font/**'
         ])
-//        .pipe(gulp.dest(systemPath + 'font/'))
         .pipe(gulp.dest(publicPath + 'font/'));
 });
 

@@ -5,7 +5,7 @@
         $('#twitch').canvasAnimation(twitchConfig);
         $('[data-toggle="tooltip"]').tooltip();
         
-        $('.copy-code').click(function() {
+        $('.code-icon').click(function() {
             selectText($(this).data('id'));
         });
         

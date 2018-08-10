@@ -1,7 +1,10 @@
 var twitchConfig = {
     autoplay: false,
-    infinity: true,
-    fontawesomeVersion: 5,
+    infinite: true,
+    useIcons: true,
+    editor: {
+        enable : true
+    },
     steps: [
         {
             addClass: 'ca-1',

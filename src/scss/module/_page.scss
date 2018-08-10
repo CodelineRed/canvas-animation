@@ -51,15 +51,16 @@ a {
         padding-left: 45px;
     }
     
-    .fa-code {
+    .code-icon {
         position: absolute;
         right: 10px;
         top: 10px;
         background-color: darkslategray;
         color: #c5c8c6;
-        padding: 5px;
+        padding: 0 5px;
         border-radius: 5px;
         cursor: pointer;
+        font-size: 1.25rem;
     }
 }
 

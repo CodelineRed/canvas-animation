@@ -1,6 +1,7 @@
 var loveConfig = {
     autoplay: true,
-    infinity: false,
+    infinite: false,
+    useIcons: true,
     steps: [
         {
             addClass: 'ca-1',
