@@ -1,0 +1,135 @@
+#season { 
+    svg {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .winter {
+        background: #bdedfc;
+        background: -moz-linear-gradient(top, #bdedfc 0%, #05abe0 100%);
+        background: -webkit-linear-gradient(top, #bdedfc 0%,#05abe0 100%);
+        background: linear-gradient(to bottom, #bdedfc 0%,#05abe0 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bdedfc', endColorstr='#05abe0',GradientType=0 );
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        
+        .ground {
+            background-color: #fff;
+            bottom: 0%;
+            height: 32%;
+            left: 0%;
+            position: absolute;
+            width: 100%;
+        }
+        
+        .tree {
+            color: forestgreen;
+            height: 75%;
+            left: 50%;
+            line-height: 0;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            width: 50%;
+        }
+        
+        .crow {
+            color: black;
+            position: absolute;
+            width: 10%;
+
+            &.crow-1 {
+                height: 15%;
+                left: 10%;
+                top: 75%;
+                animation: crow-flip 2.5s infinite linear;
+            }
+
+            &.crow-2 {
+                height: 1%;
+                left: 55%;
+                top: 45%;
+                animation: pick 2.5s infinite linear;
+
+                svg {
+                    position: absolute;
+                    height: 1000%;
+                    bottom: 0;
+                }
+            }
+        }
+        
+        .bell {
+            animation: bell-swing 1s infinite linear;
+            color: goldenrod;
+            height: 1%;
+            position: absolute;
+            
+            svg {
+                height: 1000%
+            }
+            
+            &.bell-1 {
+                left: 57%;
+                top: 54%;
+                width: 10%;
+            }
+
+            &.bell-2 {
+                left: 33%;
+                top: 54%;
+                width: 10%;
+            }
+        }
+        
+        .cloud-1 {
+            color: white;
+            height: 25%;
+            left: 0px;
+            position: absolute;
+            top: 0px;
+            width: 25%;
+        }
+        
+        .star-1 {
+            color: goldenrod;
+            height: 12.5%;
+            left: 50%;
+            position: absolute;
+            top: 5%;
+            transform: translateX(-50%);
+            width: 10%;
+        }
+        
+        .gift-1 {
+            color: tomato;
+            height: 12.5%;
+            left: 35%;
+            position: absolute;
+            top: 75%;
+            width: 10%;
+        }
+        
+        .gift-2 {
+            color: indigo;
+            height: 12.5%;
+            left: 55%;
+            position: absolute;
+            top: 75%;
+            width: 10%;
+        }
+        
+        .sun {
+            color: gold;
+            height: 15%;
+            left: 90%;
+            position: absolute;
+            top: 0%;
+            width: 10%;
+            animation: rotate-cw 10s infinite linear;
+        }
+    }
+}

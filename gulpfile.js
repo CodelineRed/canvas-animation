@@ -18,7 +18,6 @@ gulp.task('scss', function() {
         .pipe(sass())
         .pipe(minifyCss({compatibility: 'ie8'}))
         .pipe(sourcemaps.write('./'))
-//        .pipe(gulp.dest(systemPath + 'css/'))
         .pipe(gulp.dest(publicPath + 'css/'));
 });
 
@@ -73,5 +72,4 @@ gulp.task('default', ['scss', 'js', 'font', 'watch'], function() {
 
     gulp.watch(publicPath + '**/*.{css,js,jpg,png,svg,ico}').on('change', browserSync.reload);
     gulp.watch('templates/**/*.{php,html,phtml}').on('change', browserSync.reload);
-//    gulp.watch(systemPath + '**/*.{php,html,phtml}').on('change', browserSync.reload);
 });
