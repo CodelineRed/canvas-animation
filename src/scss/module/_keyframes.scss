@@ -38,6 +38,90 @@
     }
 }
 
+@keyframes snow-fall-1 {
+    from {
+        top: 15%;
+    }
+
+    to {
+        top: 20.2%;
+    }
+}
+
+@-webkit-keyframes snow-fall-1 {
+    from {
+        top: 15%;
+    }
+
+    to {
+        top: 20.2%;
+    }
+}
+
+@keyframes snow-fall-2 {
+    from {
+        top: 18%;
+    }
+
+    to {
+        top: 23.2%;
+    }
+}
+
+@-webkit-keyframes snow-fall-2 {
+    from {
+        top: 18%;
+    }
+
+    to {
+        top: 23.2%;
+    }
+}
+
+@keyframes candle-fire {
+    0% {
+        transform: translateX(-50%) scale(1, 1);
+    }
+    
+    25% {
+        transform: translateX(-50%) scale(0, 1);
+    }
+    
+    50% {
+        transform: translateX(-50%) scale(-1, 1);
+    }
+
+    75% {
+        transform: translateX(-50%) scale(0, 1);
+    }
+
+    100% {
+        transform: translateX(-50%) scale(1, 1);
+    }
+}
+
+@-webkit-keyframes candle-fire {
+    0% {
+        transform: translateX(-50%) scale(1, 1);
+    }
+    
+    25% {
+        transform: translateX(-50%) scale(0, 1);
+    }
+    
+    50% {
+        transform: translateX(-50%) scale(-1, 1);
+    }
+
+    75% {
+        transform: translateX(-50%) scale(0, 1);
+    }
+
+    100% {
+        transform: translateX(-50%) scale(1, 1);
+    }
+}
+
 @keyframes flip {
     0% {
         transform: scale(1, 1);

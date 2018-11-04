@@ -4,6 +4,18 @@
         width: 100%;
     }
     
+    .spring {
+        
+    }
+    
+    .summer {
+        
+    }
+    
+    .fall {
+        
+    }
+    
     .winter {
         background: #bdedfc;
         background: -moz-linear-gradient(top, #bdedfc 0%, #05abe0 100%);
@@ -67,6 +79,7 @@
             color: goldenrod;
             height: 1%;
             position: absolute;
+            top: 52%;
             
             svg {
                 height: 1000%
@@ -74,13 +87,11 @@
             
             &.bell-1 {
                 left: 57%;
-                top: 54%;
                 width: 10%;
             }
 
             &.bell-2 {
                 left: 33%;
-                top: 54%;
                 width: 10%;
             }
         }
@@ -88,10 +99,10 @@
         .cloud-1 {
             color: white;
             height: 25%;
-            left: 0px;
+            left: 3%;
             position: absolute;
             top: 0px;
-            width: 25%;
+            width: 20%;
         }
         
         .star-1 {
@@ -123,13 +134,97 @@
         }
         
         .sun {
-            color: gold;
-            height: 15%;
-            left: 90%;
-            position: absolute;
-            top: 0%;
-            width: 10%;
             animation: rotate-cw 10s infinite linear;
+            color: gold;
+            height: 20%;
+            left: 85%;
+            position: absolute;
+            top: 2.5%;
+            width: 15%;
+        }
+        
+        .flakes {
+            color: white;
+            height: 200%;
+            line-height: 0;
+            position: absolute;
+            width: 2.5%;
+            
+            &.flakes-1,
+            &.flakes-3,
+            &.flakes-5 {
+                animation: snow-fall-1 1s infinite linear;
+                top: 15%;
+            }
+            
+            &.flakes-2,
+            &.flakes-4 {
+                animation: snow-fall-2 1s infinite linear;
+                top: 18%;
+            }
+            
+            &.flakes-1 {
+                left: 6%;
+            }
+            
+            &.flakes-2 {
+                left: 9%;
+            }
+            
+            &.flakes-3 {
+                left: 12%;
+            }
+            
+            &.flakes-4 {
+                left: 15%;
+            }
+            
+            &.flakes-5 {
+                left: 18%;
+            }
+            
+            svg {
+                height: auto;
+                width: 100%
+            }
+        }
+        
+        .candle {
+            color: tomato;
+            height: 15%;
+            line-height: 0;
+            position: absolute;
+            top: 15%;
+            width: 5%;
+            
+            &.candle-1 {
+                left: 40%;
+            }
+            
+            &.candle-2 {
+                left: 55%;
+            }
+            
+            svg {
+                animation: candle-fire .5s infinite linear;
+                height: auto;
+                left: 50%;
+                transform: translateX(-50%);
+                transition: none;
+                top: 0;
+                width: 50%;
+            }
+            
+            .wax {
+                background-color: white;
+                border-radius: 5px;
+                bottom: 0;
+                height: 62.5%;
+                left: 50%;
+                position: absolute;
+                transform: translateX(-50%);
+                width: 50%;
+            }
         }
     }
 }

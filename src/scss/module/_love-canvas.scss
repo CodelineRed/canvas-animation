@@ -48,13 +48,23 @@
         color: lime;
         text-transform: uppercase;
         font-weight: bold;
-        font-size: 25px;
+        font-size: 15px;
+        text-align: center;
         position: absolute;
-        top: 60%;
-        left: 50%;
+        top: 65%;
+        left: 0;
         letter-spacing: 3px;
-        transform: translateX(-50%);
         opacity: 0;
+        width: 100%;
+        animation: hue 6s infinite linear;
         -webkit-animation: hue 6s infinite linear;
+        
+        @media only screen and (min-width: 480px) {
+            font-size: 20px;
+        }
+        
+        @media only screen and (min-width: 768px) {
+            font-size: 25px;
+        }
     }
 }
