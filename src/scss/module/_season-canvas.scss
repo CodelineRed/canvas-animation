@@ -5,15 +5,84 @@
     }
     
     .spring {
-        
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
     }
     
     .summer {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
         
     }
     
     .fall {
+        background: #bdedfc;
+        background: -moz-linear-gradient(top, #bdedfc 0%, #05abe0 100%);
+        background: -webkit-linear-gradient(top, #bdedfc 0%,#05abe0 100%);
+        background: linear-gradient(to bottom, #bdedfc 0%,#05abe0 100%);
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
         
+        .ground {
+            background-color: #A55D26;
+            bottom: 0%;
+            height: 32%;
+            left: 0%;
+            position: absolute;
+            width: 100%;
+        }
+        
+        .umbrella {
+            animation: umbrella-swing 3s infinite linear;
+            color: midnightblue;
+            height: 1%;
+            left: 25%;
+            line-height: 0;
+            position: absolute;
+            top: 75%;
+            width: 50%;
+            
+            svg {
+                bottom: 0;
+                height: 6000%;
+                position: absolute;
+            }
+        }
+        
+        .wind {
+            animation: wind 3s infinite linear;
+            top: 30%;
+            color: lightseagreen;
+            height: 25%;
+            left: 1%;
+            position: absolute;
+            width: 25%;
+        }
+        
+        .rain {
+            animation: rain-fall 1s infinite linear;
+            color: royalblue;
+            height: 100%;
+            left: -20%;
+            position: absolute;
+            top: -40%;
+            width: 100%;
+            
+            svg {
+                height: auto;
+                position: absolute;
+                width: 4%;
+            }
+        }
     }
     
     .winter {
@@ -24,6 +93,7 @@
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bdedfc', endColorstr='#05abe0',GradientType=0 );
         height: 100%;
         left: 0;
+        opacity: 0;
         position: absolute;
         top: 0;
         width: 100%;
