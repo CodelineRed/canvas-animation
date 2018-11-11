@@ -18,7 +18,7 @@
         position: absolute;
         top: 0;
         width: 100%;
-        
+        z-index: 1;
     }
     
     .fall {
@@ -31,6 +31,7 @@
         position: absolute;
         top: 0;
         width: 100%;
+        z-index: 2;
         
         .ground {
             background-color: #A55D26;
@@ -63,7 +64,7 @@
             top: 30%;
             color: lightseagreen;
             height: 25%;
-            left: 1%;
+            left: 5%;
             position: absolute;
             width: 25%;
         }
@@ -83,6 +84,28 @@
                 width: 4%;
             }
         }
+        
+        .clouds {
+            animation: clouds-move 5s infinite linear;
+            color: white;
+            height: 25%;
+            left: -30%;
+            overflow: hidden;
+            position: absolute;
+            top: -12.5%;
+            width: 250%;
+            
+            svg {
+                height: 100%;
+                width: auto;
+                margin-left: -1%;
+                position: relative;
+                
+                &:nth-child(even) {
+                    color: lightgrey;
+                }
+            }
+        }
     }
     
     .winter {
@@ -97,6 +120,7 @@
         position: absolute;
         top: 0;
         width: 100%;
+        z-index: 3;
         
         .ground {
             background-color: #fff;

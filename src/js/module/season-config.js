@@ -3,7 +3,7 @@ var seasonConfig = {
     infinite: true,
     useIcons: true,
     editor: {
-        enable : true
+//        enable : true
     },
     steps: [
         {

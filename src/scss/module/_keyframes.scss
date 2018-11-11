@@ -373,8 +373,8 @@
     }
     
     20% {
-        top: 22.5%;
-        height: 40%;
+        top: 17.5%;
+        height: 50%;
     }
 
     100% {
@@ -404,5 +404,25 @@
     to {
         left: -10%;
         top: -20%;
+    }
+}
+
+@keyframes clouds-move {
+    from {
+        left: -30%;
+    }
+
+    to {
+        left: 0%;
+    }
+}
+
+@-webkit-keyframes clouds-move {
+    from {
+        left: -30%;
+    }
+
+    to {
+        left: 0%;
     }
 }

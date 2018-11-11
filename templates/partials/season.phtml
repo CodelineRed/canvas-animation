@@ -21,19 +21,25 @@
         <div class="rain">
             <?php
             $left = 0;
-            for ($i = 0; $i <= 15 ; $i++) {
+            for ($i = 0; $i <= 15; $i++) {
                 for ($h = 0; $h <= 15; $h++) {
                     $left = $h;
                     
                     if ($i % 2 === 0) {
-                        $left = $h + 0.5;
+                        $left = $h + .5;
                     }
                     
                     echo '<i class="fas fa-tint" data-fa-transform="rotate-330" style="left:' . ($left * 10) . '%;top:' . ($i * 10) . '%;"></i>';
                 }
             }
             ?>
-            
+        </div>
+        <div class="clouds">
+            <?php
+            for ($i = 0; $i <= 25; $i++) {
+                echo '<i class="fas fa-cloud"  style="z-index:' . ($i % 2) . ';"></i>';
+            }
+            ?>
         </div>
         <div class="umbrella"><i class="fas fa-umbrella"></i></div>
         <div class="wind"><i class="fas fa-wind"></i></div>
