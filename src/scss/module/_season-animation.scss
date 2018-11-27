@@ -1,7 +1,40 @@
 #season {
     &.ca-1 {
+        .summer {
+            opacity: 0;
+        }
+        
+        .fall {
+            opacity: 0;
+        }
         .winter {
             opacity: 1;
+        }
+    }
+    
+    &.ca-2 {
+        .summer {
+            opacity: 0;
+        }
+        
+        .fall {
+            opacity: 1;
+        }
+        .winter {
+            opacity: 0;
+        }
+    }
+    
+    &.ca-3 {
+        .summer {
+            opacity: 1;
+        }
+        
+        .fall {
+            opacity: 0;
+        }
+        .winter {
+            opacity: 0;
         }
     }
 }

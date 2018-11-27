@@ -13,12 +13,101 @@
     }
     
     .summer {
+        background: #bdedfc;
+        background: -moz-linear-gradient(top, #bdedfc 0%, #05abe0 100%);
+        background: -webkit-linear-gradient(top, #bdedfc 0%,#05abe0 100%);
+        background: linear-gradient(to bottom, #bdedfc 0%,#05abe0 100%);
         height: 100%;
         left: 0;
         position: absolute;
         top: 0;
         width: 100%;
         z-index: 1;
+        
+        .sun {
+            animation: rotate-cw 10s infinite linear;
+            color: gold;
+            height: 20%;
+            left: 85%;
+            position: absolute;
+            top: 2.5%;
+            width: 15%;
+        }
+        
+        .ground {
+            background-color: #f6c300;
+            bottom: 0%;
+            height: 32%;
+            left: 0%;
+            position: absolute;
+            width: 100%;
+        }
+        
+        .net {
+            bottom: 10%;
+            color: white;
+            height: 45%;
+            left: 0%;
+            position: absolute;
+            width: 100%;
+        }
+        
+        .volleyball {
+            animation: volleyball-play 5s infinite linear;
+            bottom: 30%;
+            color: white;
+            height: 10%;
+            left: 13%;
+            position: absolute;
+            width: 100%;
+            
+            .fa-layers {
+                animation: rotate-cw 1s infinite linear;
+                height: 100%;
+                width: 100%;
+            }
+            
+            .fa-circle {
+                color: #5d5d5d;
+            }
+        }
+        
+        .person {
+            animation: person-jump 5s infinite linear;
+            bottom: 15%;
+            color: #a55d26;
+            height: 30%;
+            left: 0%;
+            position: absolute;
+            width: 100%;
+            
+            &.person-1 {
+                animation-delay: 2.5s;
+                left: -20%;
+            }
+            
+            &.person-2 {
+                left: 20%;
+            }
+        }
+        
+        .umbrella {
+            bottom: 25%;
+            height: 15%;
+            left: 0%;
+            position: absolute;
+            width: 100%;
+            
+            &.umbrella-1 {
+                color: orangered;
+                left: -30%;    
+            }
+            
+            &.umbrella-2 {
+                color: purple;
+                left: 30%;
+            }
+        }
     }
     
     .fall {
@@ -28,6 +117,7 @@
         background: linear-gradient(to bottom, #bdedfc 0%,#05abe0 100%);
         height: 100%;
         left: 0;
+        opacity: 0;
         position: absolute;
         top: 0;
         width: 100%;
@@ -302,8 +392,8 @@
             svg {
                 animation: candle-fire .5s infinite linear;
                 height: auto;
-                left: 50%;
-                transform: translateX(-50%);
+                left: 25%;
+                position: relative;
                 transition: none;
                 top: 0;
                 width: 50%;

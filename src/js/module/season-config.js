@@ -9,6 +9,10 @@ var seasonConfig = {
         {
             addClass: 'ca-1',
             duration: 5000
+        },
+        {
+            addClass: 'ca-2',
+            duration: 5000
         }
     ]
 };
