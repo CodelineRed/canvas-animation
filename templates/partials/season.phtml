@@ -1,12 +1,72 @@
 <div id="season" class="jca-ratio-16by9">
+    <div class="start">
+        <div class="seedling"><i class="fas fa-seedling"></i></div>
+        <div class="sun"><i class="fas fa-sun"></i></div>
+        <div class="wind"><i class="fas fa-wind"></i></div>
+        <div class="snowflake"><i class="fas fa-snowflake"></i></div>
+        <div class="text">Season</div>
+    </div>
+    
     <div class="spring">
-        <!--
-        <i class="fas fa-dove"></i>
-        <i class="fas fa-frog"></i>
-        -->
+        <div class="sun"><i class="fas fa-sun"></i></div>
+        <div class="ground"></div>
+        <div class="dove"><i class="fas fa-dove" data-fa-transform="rotate-33"></i></div>
+        <?php for ($i = 1; $i <= 10; $i++) { ?>
+        <div class="flower <?php echo 'flower-' . $i; ?>">
+            <span class="fa-layers">
+                <i class="fas fa-minus" data-fa-transform="rotate-90 down-7"></i>
+                <i class="fas fa-leaf" data-fa-transform="rotate-25 shrink-7 down-10 right-5"></i>
+                <i class="fas fa-leaf" data-fa-transform="rotate-25 shrink-7 down-10 left-5 flip-h"></i>
+                <i class="fas fa-circle blossom" data-fa-transform="shrink-7 left-4 up-8"></i>
+                <i class="fas fa-circle blossom" data-fa-transform="shrink-7 right-4 up-8"></i>
+                <i class="fas fa-circle blossom" data-fa-transform="shrink-7 left-4"></i>
+                <i class="fas fa-circle blossom" data-fa-transform="shrink-7 right-4"></i>
+                <i class="fas fa-circle stamens" data-fa-transform="shrink-8 up-4"></i>
+            </span>
+        </div>
+        <?php } ?>
+        <?php for ($i = 1; $i <= 10; $i++) { ?>
+        <div class="seedling <?php echo 'seedling-' . $i; ?>">
+            <i class="fas fa-seedling"></i>
+        </div>
+        <?php } ?>
+        <div class="tree">
+            <span class="fa-layers fa-fw">
+                <i class="fas fa-square-full" data-fa-mask="fas fa-tree" data-fa-transform="up-2.9"></i>
+                <i class="fas fa-minus" data-fa-transform="rotate-90 shrink-5 down-2"></i>
+                <i class="fas fa-circle" data-fa-transform="shrink-9 up-4"></i>
+                <i class="fas fa-circle" data-fa-transform="shrink-9 left-2"></i>
+                <i class="fas fa-circle" data-fa-transform="shrink-9 right-2"></i>
+            </span>
+        </div>
+        <div class="frog">
+            <div class="tongue">
+                <span class="fa-layers fa-fw">
+                    <i class="fas fa-minus" data-fa-transform="left-2"></i>
+                    <i class="fas fa-circle" data-fa-transform="shrink-9 right-6"></i>
+                </span>
+            </div>
+            <i class="fas fa-frog"></i>
+            <i class="fas fa-bug" data-fa-transform="shrink-12 up-2"></i>
+        </div>
     </div>
     <div class="summer">
-        <duv class="sun"><i class="fas fa-sun"></i></duv>
+        <div class="sun"><i class="fas fa-sun"></i></div>
+        <div class="water water-1">
+            <?php
+            for ($i = 0; $i <= 8; $i++) {
+                echo '<i class="fas fa-water"></i>';
+            }
+            ?>
+        </div>
+        <div class="fish"><i class="fas fa-fish"></i></div>
+        <div class="water water-2">
+            <?php
+            for ($i = 0; $i <= 8; $i++) {
+                echo '<i class="fas fa-water"></i>';
+            }
+            ?>
+        </div>
         <div class="ground"></div>
         <div class="net"><i class="fas fa-minus" data-fa-transform="rotate-90"></i></div>
         <div class="umbrella umbrella-1"><i class="fas fa-square-full" data-fa-mask="fas fa-umbrella-beach" data-fa-transform="down-16.25 grow-5"></i></div>
@@ -14,7 +74,7 @@
         <div class="person person-1"><i class="fas fa-running"></i></div>
         <div class="person person-2"><i class="fas fa-running fa-flip-horizontal"></i></div>
         <div class="volleyball">
-            <span class="fa-layers fa-fw">
+            <span class="fa-layers">
                 <i class="fas fa-circle"></i>
                 <i class="fas fa-volleyball-ball" style="color: white;"></i>
             </span>

@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-12 py-3">
-            <h1 class="text-center pb-3 d-none">
+            <h1 class="text-center pb-3">
                 InsanityMeetsHH - Canvas Animation
                 <a href="https://github.com/InsanityMeetsHH/jquery-canvas-animation" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://www.npmjs.com/package/jquery-canvas-animation" target="_blank"><i class="fab fa-npm"></i></a>
@@ -9,13 +9,13 @@
 
             <ul class="nav nav-tabs" id="page-tabs" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#love-tab" role="tab" aria-controls="love-tab" aria-selected="true">Spread Love</a>
+                    <a class="nav-link active" data-toggle="tab" href="#love-tab" role="tab" aria-controls="love-tab" aria-selected="true">Spread Love</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" data-toggle="tab" href="#twitch-tab" role="tab" aria-controls="twitch-tab" aria-selected="false">Twitch</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#season-tab" role="tab" aria-controls="season-tab" aria-selected="false">Season</a>
+                    <a class="nav-link" data-toggle="tab" href="#season-tab" role="tab" aria-controls="season-tab" aria-selected="false">Season</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" data-toggle="tab" href="#docu-tab" role="tab" aria-controls="docu-tab" aria-selected="false">Docu</a>
@@ -27,13 +27,13 @@
     <div class="row">
         <div class="col-12 pb-3">
             <div class="tab-content pt-3">
-                <div class="tab-pane fade" id="love-tab" role="tabpanel" aria-labelledby="love-tab">
+                <div class="tab-pane fade show active" id="love-tab" role="tabpanel" aria-labelledby="love-tab">
                     <?php include 'partials/love.phtml'; ?>
                 </div>
                 <div class="tab-pane fade" id="twitch-tab" role="tabpanel" aria-labelledby="twitch-tab">
                     <?php include 'partials/twitch.phtml'; ?>
                 </div>
-                <div class="tab-pane fade show active" id="season-tab" role="tabpanel" aria-labelledby="season-tab">
+                <div class="tab-pane fade" id="season-tab" role="tabpanel" aria-labelledby="season-tab">
                     <?php include 'partials/season.phtml'; ?>
                 </div>
                 <div class="tab-pane fade" id="docu-tab" role="tabpanel" aria-labelledby="docu-tab">

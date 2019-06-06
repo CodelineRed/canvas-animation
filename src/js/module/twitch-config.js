@@ -3,7 +3,7 @@ var twitchConfig = {
     infinite: true,
     useIcons: true,
     editor: {
-        enable : false
+        enable : true
     },
     steps: [
         {
