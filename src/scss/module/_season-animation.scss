@@ -1,0 +1,89 @@
+#season {
+    &.ca-1 {
+        .start {
+            opacity: 0;
+        }
+        
+        .spring {
+            opacity: 1;
+        }
+        
+        .summer {
+            opacity: 0;
+        }
+        
+        .fall {
+            opacity: 0;
+        }
+        
+        .winter {
+            opacity: 0;
+        }
+    }
+    
+    &.ca-2 {
+        .start {
+            opacity: 0;
+        }
+        
+        .spring {
+            opacity: 0;
+        }
+        
+        .summer {
+            opacity: 1;
+        }
+        
+        .fall {
+            opacity: 0;
+        }
+        
+        .winter {
+            opacity: 0;
+        }
+    }
+    
+    &.ca-3 {
+        .start {
+            opacity: 0;
+        }
+        
+        .spring {
+            opacity: 0;
+        }
+        
+        .summer {
+            opacity: 0;
+        }
+        
+        .fall {
+            opacity: 1;
+        }
+        
+        .winter {
+            opacity: 0;
+        }
+    }
+    
+    &.ca-4 {
+        .start {
+            opacity: 0;
+        }
+        
+        .spring {
+            opacity: 0;
+        }
+        
+        .summer {
+            opacity: 0;
+        }
+        
+        .fall {
+            opacity: 0;
+        }
+        
+        .winter {
+            opacity: 1;
+        }
+    }
+}

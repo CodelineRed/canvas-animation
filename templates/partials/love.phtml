@@ -1,0 +1,35 @@
+<div id="love" class="jca-ratio-16by9">
+    <div class="square red"></div>
+    <div class="square green"></div>
+    <div class="square blue"></div>
+    <div class="label">spread love</div>
+</div>
+
+<ul class="nav nav-tabs pt-3" id="love-source" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#love-html-tab" role="tab" aria-controls="love-html-tab" aria-selected="true">HTML</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#love-js-tab" role="tab" aria-controls="love-js-tab" aria-selected="false">scripts.js</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#love-dcss-tab" role="tab" aria-controls="love-dcss-tab" aria-selected="false">love-canvas.css</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#love-acss-tab" role="tab" aria-controls="love-tab" aria-selected="false">love-animation.css</a>
+    </li>
+</ul>
+<div class="tab-content pt-3">
+    <div class="tab-pane fade show active" id="love-html-tab" role="tabpanel" aria-labelledby="love-html-tab">
+        <?php include 'love-html.phtml'; ?>
+    </div>
+    <div class="tab-pane fade" id="love-js-tab" role="tabpanel" aria-labelledby="love-js-tab">
+        <?php include 'love-scripts.phtml'; ?>
+    </div>
+    <div class="tab-pane fade" id="love-dcss-tab" role="tabpanel" aria-labelledby="love-dcss-tab">
+        <?php include 'love-canvas.phtml'; ?>
+    </div>
+    <div class="tab-pane fade" id="love-acss-tab" role="tabpanel" aria-labelledby="love-acss-tab">
+        <?php include 'love-animation.phtml'; ?>
+    </div>
+</div>

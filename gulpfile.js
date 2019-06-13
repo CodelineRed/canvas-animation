@@ -18,7 +18,6 @@ gulp.task('scss', function() {
         .pipe(sass())
         .pipe(minifyCss({compatibility: 'ie8'}))
         .pipe(sourcemaps.write('./'))
-//        .pipe(gulp.dest(systemPath + 'css/'))
         .pipe(gulp.dest(publicPath + 'css/'));
 });
 
@@ -42,6 +41,24 @@ gulp.task('js', function() {
         .pipe(gulp.dest(publicPath + 'js/'));
 });
 
+// minify images
+gulp.task('img', function() {
+    gulp.src(sourcePath + 'img/**/*.{png,gif,jpg,jpeg,ico,xml,json,svg}')
+        .pipe(imagemin([
+            imagemin.gifsicle({interlaced: true}),
+            imagemin.jpegtran({progressive: true}),
+            imagemin.optipng({optimizationLevel: 5}),
+            imagemin.svgo({
+                plugins: [
+                    {removeViewBox: true},
+                    {cleanupIDs: false}
+                ]
+            })
+        ]))
+//        .pipe(gulp.dest(systemPath + 'img/'))
+        .pipe(gulp.dest(publicPath + 'img/'));
+});
+
 // copy all fonts
 gulp.task('font', function() {
     gulp.src([
@@ -57,15 +74,17 @@ gulp.task('watch', function() {
     gulp.watch(sourcePath + 'scss/**', ['scss']);
     // watch js files
     gulp.watch(sourcePath + 'js/**', ['js']);
+    // watch images
+    gulp.watch(sourcePath + 'img/**', ['img']);
     // watch fonts
     gulp.watch(sourcePath + 'font/**', ['font']);
 });
 
 // production
-gulp.task('prod', ['scss', 'js', 'font']);
+gulp.task('prod', ['scss', 'js', 'img', 'font']);
 
 // default task if just called gulp (incl. Watch)
-gulp.task('default', ['scss', 'js', 'font', 'watch'], function() {
+gulp.task('default', ['scss', 'js', 'img', 'font', 'watch'], function() {
     // start browsersync
     browserSync.init({
         proxy: localServer
@@ -73,5 +92,4 @@ gulp.task('default', ['scss', 'js', 'font', 'watch'], function() {
 
     gulp.watch(publicPath + '**/*.{css,js,jpg,png,svg,ico}').on('change', browserSync.reload);
     gulp.watch('templates/**/*.{php,html,phtml}').on('change', browserSync.reload);
-//    gulp.watch(systemPath + '**/*.{php,html,phtml}').on('change', browserSync.reload);
 });

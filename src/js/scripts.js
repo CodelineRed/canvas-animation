@@ -3,6 +3,7 @@
     $(document).ready(function() {
         $('#love').canvasAnimation(loveConfig);
         $('#twitch').canvasAnimation(twitchConfig);
+        $('#season').canvasAnimation(seasonConfig);
         $('[data-toggle="tooltip"]').tooltip();
         
         $('.code-icon').click(function() {
