@@ -1,4 +1,4 @@
 # Canvas Animation
 
-This is a [demo page](http://ca.insanitymeetshh.net) for [jQuery Plugin - Canvas Animation](https://github.com/InsanityMeetsHH/jquery-canvas-animation)
+This is a [demo page](https://ca.codelinered.net) for [jQuery Plugin - Canvas Animation](https://github.com/CodelineRed/jquery-canvas-animation)
 

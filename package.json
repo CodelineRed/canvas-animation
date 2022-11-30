@@ -7,17 +7,17 @@
         "animation"
     ],
     "author": {
-        "name": "InsanityMeetsHH",
-        "email": "software@insanitymeetshh.net"
+        "name": "CodelineRed",
+        "email": "software@codelinered.net"
     },
     "bugs": {
-        "url": "https://github.com/InsanityMeetsHH/canvas-animation/issues"
+        "url": "https://github.com/CodelineRed/canvas-animation/issues"
     },
     "license": "MIT",
-    "homepage": "http://ca.insanitymeetshh.net",
+    "homepage": "https://ca.codelinered.net",
     "repository": {
         "type": "git",
-        "url": "git://github.com/InsanityMeetsHH/canvas-animation.git"
+        "url": "git://github.com/CodelineRed/canvas-animation.git"
     },
     "devDependencies": {
         "browser-sync": "^2.26.5",
